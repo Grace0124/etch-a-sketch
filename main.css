@@ -1,6 +1,25 @@
+:root {
+    --num-squares: 16;
+  }
+
 html {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 5px;
+    margin-top: 3px;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; 
+    flex-direction: column;
+    padding: 0;
 }
 
 .container {
@@ -14,7 +33,12 @@ html {
 
 .grid_square {
     border-style: solid;
-    width: calc(800px/16);
-    height: calc(800px/16);
+    width: calc(800px/var(--num-squares));
+    height: calc(800px/var(--num-squares));
     box-sizing: border-box;
+    border-Width: 1px;
+}
+
+.hovered {
+    background-color: black;
 }
